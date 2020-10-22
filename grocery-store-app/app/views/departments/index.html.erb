@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="header">
+    <p id="notice"><%= notice %></p>
+    <h1>Departments</h1>
+
+    <%= link_to 'New Department', new_department_path %>
+  </div>
+  <div class="row">
+    <% @departments.each do |department| %>
+   <% if department.store_id != "" %>
+    <div class="card card-department col-6" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= department.name %>, <%= department.store %></h5>
+        <p class="card-text"><%= department.description %></p>
+        <%= link_to 'Show', department %>
+        <%= link_to 'Edit', edit_department_path(department) %>
+        <%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      </div>
+</div>
+</a>
+
+    <% end %>
+<% end %>
+    </div>
+  </div>
+

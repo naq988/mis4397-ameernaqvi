@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="header">
+    <p id="notice"><%= notice %></p>
+    <h1>Employees</h1>
+
+    <%= link_to 'New Employee', new_employee_path %>
+  </div>
+  <div class="row">
+    <% @employees.each do |employee| %>
+   <% if employee.first_name != "" %>
+    <div class="card card-employee col-6" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= employee.first_name %>, <%= employee.last_name %></h5>
+        <p class="card-text"><%= employee.description %> <br><br><%=- employee.role %> <br><br> <%= employee.status %><br><br> <%= employee.department %></p>
+        <%= link_to 'Show', employee %>
+        <%= link_to 'Edit', edit_employee_path(employee) %>
+        <%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      </div>
+</div>
+</a>
+
+    <% end %>
+<% end %>
+    </div>
+  </div>
