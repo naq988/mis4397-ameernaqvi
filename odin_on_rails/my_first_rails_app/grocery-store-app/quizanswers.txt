@@ -1,0 +1,18 @@
+1. Q: What is a resource?
+    A: A resource is any object, usually a database table.
+    
+2. Q: What is REST?
+    A: REST stands for representational state transfer. This allows you to get, post, put, patch and delete resources in your database.
+    
+3. Q: What is the difference between get and post ?
+    A: Get allows you to retrieve resources while post allows you to create or update resources.
+    
+4. Q: What is an example of a custom route?
+    A: get '/schools', to: 'schools#index', as: 'schools'
+       it is essentiallte get '/path', to: 'controller_name#method_name', as: 'what u want it to look like'
+    
+5. Q: What is the purpose of the routes.rb
+    A: Routes.rb allows you to implement helpers such as index, show, new, create, etc. in your application to the application controller.
+    
+6. Q: What is MVC?
+    A: an MVC is the architecture of the application, it basically seperates different components such as the controller, the views, the model and the browser page where we look at the info. It seperates different controllers that control different things.
