@@ -6,6 +6,10 @@ class HomesController < ApplicationController
   def index
     @homes = Home.all
   end
+  
+  def donate
+    
+  end
 
   # GET /homes/1
   # GET /homes/1.json

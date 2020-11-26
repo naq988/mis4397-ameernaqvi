@@ -1,0 +1,269 @@
+.iconI{
+margin-left: 15px;
+padding-top: 5px;
+}
+.avgs {
+ float: right;
+      } 
+.icon2 {
+    background: url('https://www.freeiconspng.com/thumbs/car-icon-png/car-icon-png-22.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+}
+.resources{
+border-top: 4px solid #0275d8;
+padding-bottom: 8px;
+padding-top: 5px; 
+
+}
+.card-title1{
+  border-bottom: 4px solid #0275d8;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.card-text{
+  border-bottom: 4px solid #0275d8;
+  padding-bottom: 7px;
+}
+#logo img {
+    height: 50px;
+    width: auto;
+}
+.head {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 40pt;
+    font-style: Helvetica;   
+}
+.paragraph1{
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 15pt;
+  font-family: Helvetica, sans-serif;
+}
+.images1{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 500px;
+}
+.item {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner {
+  height:450px;
+  width: auto;
+  display: fixed; 
+}
+.carousel-inner > .item > img {
+  display: relative;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;      
+}
+#map {
+  height: 100%;
+}
+
+/*  #map-container-google-1 {
+padding-top: 200px;
+}  
+.map-container{
+overflow:hidden;
+padding-bottom:45.25;
+position:relative;
+height:auto;
+top: 50px;
+}
+.map-container iframe{
+left:0;
+top:150;
+height:100%;
+width:100%;
+position:absolute;
+}*/
+
+/* 
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.prepared-top-segment{
+  top: 200px;
+} */
+
+.body-text{
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding:10px;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.jumbotron {
+  background-image: url("http://www.californiafootgolfclub.com/static/img/footgolf-1.jpg");
+  background-size: cover;
+} 
+
+.rounded-circle {
+  width: 99px;
+  height: 99px;
+  overflow: hidden;
+
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.rounded-circle-map {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin:0 15px 15px 0;
+
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.card-article {
+  margin: 0 3px 0 3px;
+  outline: 1px black;
+  border-radius: 10px;
+  width:32%;
+  height:33%;
+  overflow:hidden;
+}
+.card-body {
+  outline: 1px black;
+  border-radius: 10px;
+}
+
+/* something for whatever */
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*code for hover overlay, NOT WORKING */
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*code for youtube video on homepage */
+.ResponsiveYTPlayer { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .ResponsiveYTPlayer iframe, .ResponsiveYTPlayer object, .ResponsiveYTPlayer embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/*code for weather api */
+.input{
+  text-align: center;
+  margin: 100px auto;
+}
+
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.card-api{
+  width: 50%;
+  background: #e7e7e7;
+  height: 40vh;
+  margin: 50px auto;
+  border-radius: 2px;
+}
+
+
+.close{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card-api h1{
+  padding: 5px 0;
+  text-align: center;
+}
+
+.card-api p{
+  text-align: center;
+  margin:40px 0;
+  font-size:20px;
+}

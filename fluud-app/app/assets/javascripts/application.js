@@ -16,15 +16,9 @@
 //= require_tree .
 
 
-.mg { 
-            float: left;  
-            margin: 5px; 
-        } 
-        p { 
-            text-align: justify; 
-            font-size: 25px; 
-        } 
+require ("javascripts/custom");
 
-var map = new Map("map",{basemap: "topo",center: [-95.3698, 29.7604],zoom: 13,sliderStyle: "small"});
+
+
 
 

@@ -1,0 +1,2 @@
+module PreparedinfosHelper
+end
