@@ -1,0 +1,17 @@
+<%= form_for(preparedinfo) do |f| %>
+  <% if preparedinfo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(preparedinfo.errors.count, "error") %> prohibited this preparedinfo from being saved:</h2>
+
+      <ul>
+      <% preparedinfo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
