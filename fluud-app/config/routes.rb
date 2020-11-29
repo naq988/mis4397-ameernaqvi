@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
   devise_for :users
   resources :resources
   resources :preparedinfos
-  devise_for :user_devises, path_names: {sign_in: "login",sign_out: "logout"}
   resources :maps
   resources :prepareds
   resources :homes
@@ -12,3 +13,18 @@ Rails.application.routes.draw do
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+
+#Rails.application.routes.draw do
+
+  #get 'pages/home'
+
+  #devise_for :users
+ # resources :resources
+  #devise_for :user_devises
+  #resources :maps
+  #root 'homes#index'
+# end
+
+
+
+

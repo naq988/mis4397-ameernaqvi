@@ -55,16 +55,16 @@
         </ul>
         
         <form class="form-inline my-2 my-lg-0">
-          <% if user_devise_signed_in? %>
+          <% if user_signed_in? && !user_signed_in?.nil?%>
             Logged in as <strong><%= current_user.email %></strong>.
             <%= link_to 'Edit profile', edit_user_registration_path %> |
             <%= link_to "Logout", destroy_user_session_path, method: :delete %>
             <% else %>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            <%= link_to "Sign up", new_user_devise_registration_path %>
+            <%= link_to "Sign up", new_user_registration_path %>
           </button>&nbsp&nbsp
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            <%= link_to "Login", new_user_devise_session_path %>
+            <%= link_to "Login", new_user_session_path %>
           </button>
         <% end %>
         </form>
