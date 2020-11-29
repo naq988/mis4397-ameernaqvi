@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @prepared.image %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @prepared.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @prepared.description %>
+</p>
+
+<p>
+  <strong>Button:</strong>
+  <%= @prepared.button %>
+</p>
+
+<%= link_to 'Edit', edit_prepared_path(@prepared) %> |
+<%= link_to 'Back', prepareds_path %>

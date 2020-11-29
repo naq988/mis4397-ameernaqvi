@@ -1,0 +1,2 @@
+class Preparedinfo < ApplicationRecord
+end
